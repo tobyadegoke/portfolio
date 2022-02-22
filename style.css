@@ -32,6 +32,10 @@ header {
     cursor: pointer;
 }
 
+.social-icons-top a {
+    text-decoration: none;
+}
+
 .menu-icon {
     width: 35px;
     cursor: pointer;
@@ -52,7 +56,7 @@ nav ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 80px 8%;
+    margin: 80px 6%;
 }
 
 .col-1 {
