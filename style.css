@@ -393,25 +393,25 @@ footer a {
         display: none;
     }
 
-    .row {
+    .row-1 {
         flex-direction: column;
         text-align: center;
     }
 
-    .col-1 h1 {
+    .row-1 .col-1 h1 {
         font-size: 32px;
         font-kerning: auto;
         line-height: 39px;
         margin-bottom: 40px;
     }
 
-    .col-1 h3 {
+    .row-1 .col-1 h3 {
         font-size: 22px;
         font-weight: 300;
         margin: 10px 0;
     }
 
-    #cta {
+    .row-1 #cta {
         width: 55vw;
         height: 12vh;
         border: 0;
@@ -426,12 +426,12 @@ footer a {
         transition: width 0.5s;
     }
 
-    #cta:hover {
+    .row-1 #cta:hover {
         width: 59vw;
         text-decoration: none;
     }
 
-    .col-2 {
+    .row-1 .col-2 {
         position: relative;
         display: flex;
         justify-content: end;
@@ -439,13 +439,13 @@ footer a {
         margin: 30px 12%;
     }
 
-    .col-2 .profile {
+    .row-1 .col-2 .profile {
         max-width: 100%;
         border-radius: 100px 20px 20px 20px;
         margin-right: 2%;
     }
 
-    .color-box {
+    .row-1 .color-box {
         position: absolute;
         right: 0;
         top: 1.5%;
