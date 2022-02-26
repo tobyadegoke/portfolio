@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Space Grotesk', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -319,6 +320,10 @@ header {
     text-align: end;
 }
 
+#cta-anchor {
+    height: 100px;
+}
+
 .row-6 {
     display: flex;
     flex-direction: row;
@@ -580,6 +585,10 @@ footer a {
         font-size: 14px;
         font-weight: 600;
         text-align: center;
+    }
+
+    #cta-anchor {
+        height: 10px;
     }
 
     .row-6 {
