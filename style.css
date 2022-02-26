@@ -30,11 +30,16 @@ header {
     height: 30px;
     margin: 3px;
     cursor: pointer;
+    transition: 0.5s ease-out;
 }
 
 .social-icons-top a {
     text-decoration: none;
     top: 0;
+}
+
+.social-icons-top img:hover {
+    transform: translateY(-10px);
 }
 
 .menu-icon {
@@ -178,8 +183,28 @@ header {
 }
 
 .projects-grid .grid-items:hover {
-    background: #d9d9d9;
     cursor: pointer;
+}
+
+.grid-items a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+
+.grid-items a::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    background: #fff;
+    position: absolute;
+    bottom: 1;
+    left: 0;
+    transition: width 0.9s;
+}
+
+.grid-items a:hover:after {
+    width: 30%;
 }
 
 .projects-grid .grid-items h3 {
@@ -438,11 +463,16 @@ header {
     width: 40px;
     margin: 5px;
     cursor: pointer;
+    transition: 0.5s ease-out;
 }
 
 .social-icons-bottom a {
     text-decoration: none;
     top: 0;
+}
+
+.social-icons-bottom img:hover {
+    transform: translateY(-10px);
 }
 
 footer {
