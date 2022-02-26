@@ -180,9 +180,6 @@ header {
 .projects-grid .grid-items:nth-child(1) {
     grid-column: span 2;
     grid-row: span 1;
-    background-image: url('images/test.png');
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .projects-grid .grid-items:nth-child(2) {
@@ -420,7 +417,7 @@ footer a {
 
     .row-1 #cta {
         width: 55vw;
-        height: 12vh;
+        height: 10vh;
         border: 0;
         font-size: 22px;
         font-weight: 500;
