@@ -24,11 +24,10 @@ header {
 .logo {
     width: 120px;
     cursor: pointer;
-    margin: 0 0 0 -8%;
 }
 
 .social-icons-top img {
-    height: 20px;
+    height: 30px;
     margin: 3px;
     cursor: pointer;
 }
@@ -48,6 +47,11 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 80px 6% 30px;
+}
+
+.row-1 a {
+    text-decoration: none;
+    color: #000;
 }
 
 .row-1 .col-1 {
@@ -70,19 +74,20 @@ header {
 
 .row-1 #cta {
     width: 200px;
-    border: 0;
+    border: 2px solid #000;
     font-size: 20px;
     font-weight: 500;
     padding: 12px 10px;
-    outline: none;
-    background-color: black;
-    color: #fff;
-    border-radius: 22px;
-    transition: width 0.5s;
+    color: #000;
+    background-color: #fff;
+    border-radius: 23px;
+    transition: width 0.9s;
 }
 
 .row-1 #cta:hover {
     width: 210px;
+    background-color: #000;
+    color: #fff;
     text-decoration: overline;
     cursor: pointer;
 }
@@ -120,8 +125,13 @@ header {
     justify-content: center;
 }
 
-.scroll-icon {
-    width: 4%;
+.row-2 a {
+    text-decoration: none;
+    color: #000;
+}
+
+.row-2 img {
+    width: 40px;
     align-self: center;
     margin-top: 10px;
     cursor: pointer;
@@ -292,6 +302,27 @@ header {
     margin: 15px 6%;
 }
 
+.experience a {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+}
+
+.experience a::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.9s;
+}
+
+.experience a:hover:after {
+    width: 100%;
+}
+
 .experience .left {
     width: 40%;
 }
@@ -326,6 +357,27 @@ header {
     flex-direction: row;
     justify-content: space-between;
     margin: 15px 6%;
+}
+
+.row-6 a {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+}
+
+.row-6 a::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.9s;
+}
+
+.row-6 a:hover:after {
+    width: 100%;
 }
 
 .row-6 .left {
@@ -374,6 +426,22 @@ footer {
 footer a {
     text-decoration: none;
     color: #000;
+    position: relative;
+}
+
+footer a::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.9s;
+}
+
+footer a:hover:after {
+    width: 100%;
 }
 
 @media only screen and (max-width: 700px) {
