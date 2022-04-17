@@ -227,6 +227,122 @@ header {
     font-weight: 600;
 }
 
+#specific-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+#specific-project p {
+    align-self: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.specific-projects {
+    position: relative;
+    margin: 50px 6% 200px;
+}
+
+.specific-featured-image {
+    margin: 50px 0 100px;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.specific-featured-image img {
+    height: 80vh;
+    width: 100%;
+    border-radius: 50px;
+    object-fit: cover;
+    opacity: 100%;
+}
+
+.specific-project-items {
+    position: relative;
+}
+
+.specific-project-items h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.specific-project-items p {
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.feature-image-1 {
+    margin: 100px 0;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+}
+
+.feature-image-1 img {
+    height: 60vh;
+    width: 70%;
+    border-radius: 50px;
+    object-fit: cover;
+    opacity: 100%;
+}
+
+.feature-image-2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 100px 0;
+    gap: 15px;
+}
+
+.feature-image-2 .feature-left {
+    position: relative;
+}
+
+.feature-image-2 .feature-left img {
+    width: 38vw;
+    border-radius: 50px;
+}
+
+.feature-image-2 .feature-right {
+    position: relative;
+}
+
+.feature-image-2 .feature-right img {
+    border-radius: 50px;
+    width: 38vw;
+}
+
+.sketchfab-embed-wrapper {
+    height: 60vh;
+    text-align: center;
+    margin: 50px 0 100px;
+}
+
+#after-3d {
+    text-align: left;
+    margin: 100px 0;
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+#product-sample {
+    padding: 80px 0;
+}
+
+.youtube-video {
+    width: 100%;
+    margin: 100px 0;
+    border-radius: 50px;
+}
+
 .projects {
     position: relative;
     margin: 50px 6% 200px;
