@@ -328,117 +328,6 @@ header {
     cursor: pointer;
 }
 
-.projects-grid {
-    position: relative;
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 300px);
-    margin: 10% 6% 15% 6%;
-    grid-auto-flow: dense;
-    grid-gap: 1.5%;
-}
-
-.projects-grid .grid-items {
-    background: #000;
-    display: grid;
-    padding: 10%;
-    place-items: center;
-    transition: 0.9s;
-    border-radius: 35px;
-    color: #fff;
-}
-
-.projects-grid .grid-items:hover {
-    cursor: pointer;
-}
-
-.grid-items a {
-    text-decoration: none;
-    color: #fff;
-    position: relative;
-}
-
-.grid-items a::after {
-    content: '';
-    height: 2px;
-    width: 0;
-    background: #fff;
-    position: absolute;
-    bottom: 1;
-    left: 0;
-    transition: width 0.9s;
-}
-
-.grid-items a:hover:after {
-    width: 30%;
-}
-
-.projects-grid .grid-items h3 {
-    position: relative;
-    font-size: 30px;
-}
-
-.projects-grid .grid-items:nth-child(1) {
-    grid-column: span 2;
-    grid-row: span 1;
-    background: linear-gradient(to bottom, rgba(15, 12, 41, 0.2), rgba(48, 43, 99, 0.4), rgba(36, 36, 62, 1)), url('./Images/cloud9.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-}
-
-.projects-grid .grid-items:nth-child(2) {
-    grid-column: span 1;
-    grid-row: span 1;
-    background: linear-gradient(to bottom, rgba(15, 12, 41, 0.2), rgba(48, 43, 99, 0.8), rgba(36, 36, 62, 1)), url('./Images/noisemaker.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
-.projects-grid .grid-items:nth-child(3) {
-    grid-column: span 1;
-    grid-row: span 2;
-    background: linear-gradient(to bottom, rgba(15, 12, 41, 0.2), rgba(48, 43, 99, 0.8), rgba(36, 36, 62, 0.8)), url('./Images/fokasu.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.projects-grid .grid-items:nth-child(4) {
-    grid-column: span 1;
-    grid-row: span 1;
-    background: linear-gradient(to bottom, rgba(15, 12, 41, 0.2), rgba(48, 43, 99, 0.8), rgba(36, 36, 62, 1)), url('./Images/gyde.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.projects-grid .grid-items:nth-child(5) {
-    grid-column: span 1;
-    grid-row: span 1;
-    background: linear-gradient(to bottom, rgba(15, 12, 41, 0.2), rgba(48, 43, 99, 0.8), rgba(36, 36, 62, 1)), url('./Images/urban-logistix.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.projects-grid .grid-items:nth-child(6) {
-    grid-column: span 2;
-    grid-row: span 1;
-    background: linear-gradient(to bottom, rgba(15, 12, 41, 0.2), rgba(48, 43, 99, 0.5), rgba(36, 36, 62, 0.5)), url('./Images/rocket.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.projects-grid .grid-items a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.content p span {
-    font-size: 13px;
-}
 
 .row-4 {
     display: flex;
@@ -737,7 +626,7 @@ header {
 }
 
 .contact-form {
-    margin: 120px 6% 50px;
+    margin: 80px 6% 50px;
 }
 
 .contact-form .form-box {
@@ -768,7 +657,7 @@ header {
     font-size: 18px;
     font-weight: 400;
     border: none;
-    border-bottom: 2px solid #d9d9d9;
+    border-bottom: 3px solid #d9d9d9;
     outline: none;
 }
 
@@ -807,6 +696,7 @@ header {
     background-color: #fff;
     border-radius: 23px;
     transition: 0.5s ease;
+    margin: 80px 0 50px;
 }
 
 .contact-form .form-box .input-box input[type="submit"]:hover {
@@ -816,6 +706,38 @@ header {
     text-decoration: none;
     cursor: pointer;
 }
+
+.contact-form .form-box .project-budget h5{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px 0 30px;
+}
+
+
+.contact-form .form-box .project-budget input[type="radio"]{
+    display: none;
+}
+
+.contact-form .form-box .project-budget label{
+    font-size: 20px;
+    border: 2px solid #000;
+    border-radius: 23px;
+    padding: 10px 30px;
+    position: relative;
+    transition: 0.5s;
+    margin: 10px 20px 10px 0;
+}
+
+.contact-form .form-box .project-budget input[type="radio"]:hover + label {
+    background-color: #000;
+    color: #fff;
+}
+
+.contact-form .form-box .project-budget input[type="radio"]:checked + label {
+    background-color: #000;
+    color: #fff;
+}
+
 
 footer {
     text-align: center;
@@ -943,33 +865,6 @@ footer a:hover:after {
         line-height: 39px;
     }
 
-    .projects-grid {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        height: 100%;
-        margin: 10% 12% 10%;
-    }
-
-    .projects-grid .grid-items {
-        background: #000;
-        display: flex;
-        padding: 10%;
-        place-items: center;
-        transition: 0.9s;
-        border-radius: 35px;
-        color: #fff;
-    }
-
-    .projects-grid .grid-items:hover {
-        cursor: pointer;
-    }
-
-    .projects-grid .grid-items h3 {
-        position: relative;
-        font-size: 20px;
-    }
-
     .guitar-icon {
         display: inline-block;
         width: 20%;
@@ -1009,27 +904,6 @@ footer a:hover:after {
         font-size: 32px;
         font-kerning: auto;
         line-height: 39px;
-    }
-
-    .experience {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .experience .left {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .experience .right {
-        width: 100%;
-    }
-
-    .experience .right #duration {
-        font-size: 14px;
-        font-weight: 600;
-        text-align: center;
     }
 
     #cta-anchor {
