@@ -232,6 +232,21 @@ header {
     position: relative;
 }
 
+#showcase-page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#showcase-item {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    width: 45%;
+    padding: 2%;
+}
+
 .project-items h4 {
     font-size: 28px;
     font-weight: 500;
@@ -279,7 +294,7 @@ header {
 .featured-image {
     margin: 30px 0 100px;
     height: 70vh;
-    border-radius: 50px;
+    border-radius: 35px;
     cursor: pointer;
     position: relative;
 }
@@ -288,7 +303,7 @@ header {
 .featured-image img {
     height: 70vh;
     width: 100%;
-    border-radius: 50px;
+    border-radius: 35px;
     transition: 0.5s ease-out;
     object-fit: cover;
     opacity: 80%;
@@ -394,7 +409,7 @@ header {
 
 .feature-image-2 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 100px 0;
     gap: 15px;
@@ -405,8 +420,8 @@ header {
 }
 
 .feature-image-2 .feature-left img {
-    width: 38vw;
-    border-radius: 50px;
+    width: 35vw;
+    border-radius: 30px;
 }
 
 .feature-image-2 .feature-right {
@@ -414,8 +429,8 @@ header {
 }
 
 .feature-image-2 .feature-right img {
-    border-radius: 50px;
-    width: 38vw;
+    border-radius: 30px;
+    width: 35vw;
 }
 
 .sketchfab-embed-wrapper {
@@ -438,8 +453,8 @@ header {
 
 .youtube-video {
     width: 100%;
+    height: 80vh;
     margin: 100px 0;
-    border-radius: 50px;
 }
 
 
