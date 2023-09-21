@@ -918,7 +918,7 @@
     }
 
     .footer {
-        padding: 80px 55px 0;
+        padding: 80px 55px 4%;
         text-align: center;
     }
     
@@ -982,8 +982,8 @@
     }
 
     #copyright {
-        font-size: 2.8vw;
-        margin: 4% 4%;
+        font-size: 2.5vw;
+        /* margin: 4% 4%; */
     }
 
 
