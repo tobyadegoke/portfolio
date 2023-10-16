@@ -268,6 +268,8 @@
 }
 
 .row-3 img {
+    width: 100%;
+    height: 75vh;
     object-fit: cover;
 }
 
@@ -833,6 +835,12 @@
         margin: 80px 0;
     }
 
+    .row-3 img{
+        margin: 0 0;
+        height: auto;
+        object-fit: cover;
+    }
+
 
     .section-header {
         margin: 5%;
@@ -952,29 +960,6 @@
         margin-bottom: 5px;
     }
     
-    .left span {
-        color: #DEFA0F;
-    }
-    
-    .footer .left a {
-        text-decoration: none;
-        position: relative;
-    }
-    
-    .footer .left a::after {
-        content: '';
-        height: 3px;
-        width: 0;
-        background: #DEFA0F;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        transition: width 0.9s;
-    }
-    
-    .footer a:hover::after {
-        width: 100%;
-    }
     
     .right img{
         width: 15%;
